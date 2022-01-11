@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+	
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+		
+		
+		body{
+			background-color:darkred
+			
+			
+			
+			
+			
+		}
+		@font-face {
+	font-family: Prodeo ; src: url( "Prodeo-nRXgM.otf"); 
+	
+		}
+		
+			@font-face {
+				font-family: Kotta ; src: url( "KottaOne-4BeM9.ttf");}
+				
+				#Series:hover{
+				4
+				color: white
+				
+				
+				
+				
+				
+				
+		}
+		
+		
+		h1{
+			
+			font-family: Kotta
+		}
+		
+		
+		
+		
+		</style>
+		
+	
+	
+	
+	
+	
+	</head>
+	
+	
+	<body> 
+		<h1  id="Title"style="text-align: center;font-family: Kotta "></h1>
+		<p style="text-align: center">
+	<img id="bookimg" width="300px" height="420px" style=" position: relative;top: 50px;left: 0px" src="">
+		</p>
+		
+	<div style="float: left;background-color: ;border: 10px solid white;width: 420px;height: 500px;position: absolute; top: 90px;left: 20px  ">
+		<h1 onclick="localStorage.series = series; window.location.href = 'Carlos Series.html'"  id="Series"style="text-align: center"></h1>
+
+		<h1 id="Type"  style="text-align: center;position: relative;top: 120px"> </h1>
+		
+		<h1 id="Pages"style="text-align: center;position: relative;top: 250px"> </h1>
+		
+		
+		
+	</div>
+		
+		<div id="left" style="float: right;background-color: ;border: 10px solid white;width: 420px;height: 500px;position: absolute; top: 90px;right:  20px  ">
+		
+		<h1 style="text-align: center;font-family: Kotta "> Main Characters:</h1>
+		
+		<ul style="font-size: 40px;font-family: Kotta">
+			<span id="characterList"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</ul>
+			
+
+			<h1 style="text-align: center;font-family: Kotta "> Quote:</h1>
+			
+			<h1 id="Quote" style="text-align: center;font-family: Kotta "> </h1>
+			
+			
+			<h1 id="Quote2" style="text-align: center;font-family: Kotta "> </h1>
+			
+			
+			
+			<h1 id="Quote3" style="text-align: center;font-family: Kotta "> </h1>
+			
+		
+		
+		
+		
+		
+		
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+	
+	<script>
+	document.getElementById("left").style.height = "";
+	var BookTitle = localStorage.getItem("BookTitle")
+	
+	switch(BookTitle){
+		
+		
+			
+		case "Queen of Air and Darkness":
+			document.getElementById("bookimg").src = "Queen%20of%20midnigth.jfif"
+			
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = "912pg"		
+			
+				var series = "ShadowhunterChronicles";
+			
+			
+			
+			
+			document.getElementById("characterList").innerHTML = "<li>Julian Blackthorn</li>	<li>Emma Carstair</li> <li>Mark Blackthorn</li> 	<li>Cristina Rosales</li> 			<li>Ty Blackthorn</li><li>Kit Herondale</li>"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Queen of Air and Darkness"
+					document.getElementById("Quote").innerHTML = " \“Ah, Watson, you may not yourself be luminous, but you are an extraordinary conductor of light. \” - Ty";
+			
+			
+	
+			
+		
+			break;
+			
+			
+		case "Clockwork Angle":
+			document.getElementById("bookimg").src = "clockwork-angel.jpg"
+				var series = "ShadowhunterChronicles";
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronicles"		
+			document.getElementById("Pages").innerHTML = "481pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Will Herondale</li>	<li>Jem Carstair</li> <li>Tessa Gray</li> 	"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Clockwork Angel"
+			document.getElementById("Quote").innerHTML = "	\“Will smiled the way Lucifer might have smiled, moments before he fell from Heaven. \”";
+			
+		
+			break;
+			
+				
+		case "Clockwork Prince":
+			document.getElementById("bookimg").src = "CP_cover,_repackaged.jpg"
+				var series = "ShadowhunterChronicles";
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = "481pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Will Herondale</li>	<li>Jem Carstair</li> <li>Tessa Gray</li> 	"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Clockwork Prince"
+			
+			document.getElementById("Quote").innerHTML = "	\“There is plenty of sense in nonsense sometimes, if you wish to look for it.\” - Will";
+	
+			
+			
+				
+			break;
+			
+			
+			
+			case "Clockwork Princess":
+			document.getElementById("bookimg").src = "CP2_cover,_repackaged.jpg"
+				var series = "ShadowhunterChronicles";
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = " 570pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Will Herondale</li>	<li>Jem Carstair</li> <li>Tessa Gray</li> 	"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Clockwork Princess"
+			
+			document.getElementById("Quote").innerHTML = "	\“And to the devil with it if she is!\" said the Consul. \"One girl, who is not Nephilim, is not, cannot, be our priority.\" \"She is my priority!\" Will shouted.\”";
+	
+			
+				break;
+			case "City of Bones":
+			document.getElementById("bookimg").src = "City%20of%20Bones.jpg"
+				var series = "ShadowhunterChronicles";
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = "485pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Clary Fray</li>	<li>Simon Lewis</li> <li>Jace Herndale</li> <li>Isabelle Lightwood</li> <li>Alec Lightwood</li> <li>Magnus Bane</li>  	"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "City of Bones"
+			
+			document.getElementById("Quote").innerHTML = " \“Don ’t get upset? You’re telling me that my dad is a guy who’s basically an evil overlord, and you want me not to get upset? \”";
+	
+			
+				
+			break;
+			
+			
+				case "City of Ashes":
+			document.getElementById("bookimg").src = "city-of-ashes-9781481455978_hr.jpg"
+				var series = "ShadowhunterChronicles";
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = "464pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Clary Fray</li>	<li>Simon Lewis</li> <li>Jace Herndale</li> <li>Isabelle Lightwood</li> <li>Alec Lightwood</li> <li>Magnus Bane</li>  	"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "City of Ashes"
+			
+			document.getElementById("Quote").innerHTML = "\“Look,\" Luke went on, \"In all the years I've known him, there's always been exactly one place Simon wanted to be, and he's always fought like hell to make sure he got there and stayed there.\" \"Where's that?\" \"Wherever you were.\”";
+	
+			
+				
+			break;
+			
+				case "City of Glass":
+			document.getElementById("bookimg").src = "9781406307641.jpg"
+			
+				var series = "ShadowhunterChronicles";document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = "485pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Clary Fray</li>	<li>Simon Lewis</li> <li>Jace Herndale</li> <li>Isabelle Lightwood</li> <li>Alec Lightwood</li> <li>Magnus Bane</li>  	"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "City of Glass"
+			
+			document.getElementById("Quote").innerHTML = "\“Enough, both of you,' Clary said. 'You can't be complete jerks to each other forever, you know.'Technically,' said Simon, 'I can.'Jace made an inelegant noise; after a moment Clary realized that he was trying not to laugh, and only semi-succeeding.\”";
+	
+			
+				
+			break;
+			
+			
+					case "City of Fallen Angles":
+			document.getElementById("bookimg").src = "COFA_cover,_repackaged.jpg"
+				var series = "ShadowhunterChronicles";
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = "424pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Clary Fray</li>	<li>Simon Lewis</li> <li>Jace Herndale</li> <li>Isabelle Lightwood</li> <li>Alec Lightwood</li> <li>Magnus Bane</li>  	"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "City of Fallen Angels"
+			
+			document.getElementById("Quote").innerHTML = "\“You're the first Shadowhunter I've ever met.\"\“That’s too bad,\” said Jace, \“since all the others you meet from now on will be a terrible letdown.\”";
+	
+			
+				
+			break;
+			
+			
+			
+			
+			
+						case "City of Lost Souls":
+			document.getElementById("bookimg").src = "COLS_cover,_repackaged.jpg"
+				var series = "ShadowhunterChronicles";
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = "534 pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Clary Fray</li>	<li>Simon Lewis</li> <li>Jace Herndale</li> <li>Isabelle Lightwood</li> <li>Alec Lightwood</li> <li>Magnus Bane</li>  	"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "City of Lost Souls"
+			
+			document.getElementById("Quote").innerHTML = "\“I stabbed you. With a massive sword. You caught on fire.\"His lips twitched, almost imperceptibly. \"Okay, so maybe our problems aren't like other couples.\”";
+	
+			
+				
+			break;
+			
+			
+			
+			
+						case "City of Heavenly Fire":
+			document.getElementById("bookimg").src = "COHF_cover,_repackaged.jpg"
+				var series = "ShadowhunterChronicles";
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = "725pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Clary Fray</li>	<li>Simon Lewis</li> <li>Jace Herndale</li> <li>Isabelle Lightwood</li> <li>Alec Lightwood</li> <li>Magnus Bane</li>  	"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "City of HEavenly Fire"
+			
+			document.getElementById("Quote").innerHTML = "\“Heroes aren't always the ones who win,\" she said. \"They're the ones who lose, sometimes. But they keep fighting, they keep coming back. They don't give up. That's what makes them heroes.\” - Clary";
+	
+			
+				
+			break;
+						
+			
+			
+						case "Lady Midnigth":
+			document.getElementById("bookimg").src = "220px-Lady_Midnight_book_cover.jpg"
+				var series = "ShadowhunterChronicles";	
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = "668pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Julian Blackthorn</li>	<li>Emma Carstair</li> <li>Mark Blackthorn</li> 	<li>Cristina Rosales</li> 			<li>Ty Blackthorn</li><li>Kit Herondale</li>"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Lady Midnight"
+			
+			document.getElementById("Quote").innerHTML = "\“Lex malla, lex nulla. A bad law is no law.\” -Julian";
+	
+			
+			document.getElementById("Quote2").innerHTML = "\“These pictures are my heart. And if my heart was a canvas, every square inch of it would be painted over with you.\” -Julian"
+			
+			
+			document.getElementById("Quote3").innerHTML = "\“You'll fix me, because we're parabatai. We're forever.\” -Emma"
+			
+				
+			break;
+			
+			
+			
+			
+			
+			
+							case "Lord of Shadows":
+			document.getElementById("bookimg").src = "lord-of-shadows-9781471116650_hr.jpg"
+				var series = "ShadowhunterChronicles";
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = "699pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Julian Blackthorn</li>	<li>Emma Carstair</li> <li>Mark Blackthorn</li> 	<li>Cristina Rosales</li> 			<li>Ty Blackthorn</li><li>Kit Herondale</li>"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Lord of Shadows"
+			
+			document.getElementById("Quote").innerHTML = "\“Jules: For one, you have a terrifying older brother.Livvy: I do not have a terryfying older brother.Jules: That's true. You have two.\”";
+	
+			
+			
+				
+			break;
+			
+			
+			
+				case "Tales of The Shadowhunter Academy":
+			document.getElementById("bookimg").src = "tales from the shadowhunter academy.jpg"
+				var series = "ShadowhunterChronicles";
+			document.getElementById("Series").innerHTML = "Shadowhunter Chronciles"		
+			document.getElementById("Pages").innerHTML = "704pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Simon Lovelace</li> <li>George Lovelace</li> <li>Isabelle Ligthwood</li> <li>Marisol Garza</li>"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Tales of The Shadowhunter Academy"
+			
+			document.getElementById("Quote").innerHTML = "\“Izzy -I don't know why you'd wait for me, but if you do, I promise to make myself worth that wait. Or I'll try. I can promise I am going to try.\” - Simon"
+	
+				document.getElementById("Quote2").innerHTML = "\“We are all our past have made us. The accumulation of thousands of daily choices. We can change ourselves, but never erase what we've been. Forgetting those choices doesn't unmake them.\”"
+
+			
+			
+			
+				
+			break;
+			
+			
+			
+			
+			
+			
+			
+				case "Eragon":
+			document.getElementById("bookimg").src = "Eragon_cover.jfif"
+			var series = "InheritanceCycle";
+			
+			document.getElementById("Series").innerHTML = "Inheritance Cycle"		
+			document.getElementById("Pages").innerHTML = "509pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Eragon</li> <li>Saphira</li> <li>Murthag</li> <li>Brom</li>"	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Eragon"
+			
+			document.getElementById("Quote").innerHTML = "\“Eragon looked back at him, confused. \"I don't understand.\"\"Of course you don't,\" said Brom impatiently. \"That's why I'm teaching you and not the other way around.\Eragon”"
+	
+				
+			
+			
+			
+				
+			break;
+			
+			
+			
+						case "Eldest":
+			document.getElementById("bookimg").src = "Eldest_cover.jpg"
+			var series = "InheritanceCycle";
+			document.getElementById("Series").innerHTML = "Inheritance Cycle"		
+			document.getElementById("Pages").innerHTML = "694pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Eragon</li> <li>Saphira</li> <li>Murthag</li> <li>Brom</li> <li>Angela</li><li>Solembum</li> <li>Nasuada</li> "	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Eldest"
+			
+			document.getElementById("Quote").innerHTML = "\“When you can have anything you want by uttering a few words, the goal matters not, only the journey to it. \”-Eragon"	
+			break;
+			
+			
+						case "Brisingr":
+			document.getElementById("bookimg").src = "brisingr_cover.jpg"
+			var series = "InheritanceCycle";
+			document.getElementById("Series").innerHTML = "Inheritance Cycle"		
+			document.getElementById("Pages").innerHTML = "831pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Eragon</li> <li>Saphira</li> <li>Murthag</li> <li>Brom</li> <li>Angela</li><li>Solembum</li> <li>Nasuada</li> <li>Glaedr </li> <li>Araya</li> <li>Ormis</li> "	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Brisingr"
+			
+			document.getElementById("Quote").innerHTML = "\“You named your sword Fire? Fire? What kind of a boring name is that?\-Murthag”"	
+			break;
+			
+			
+			
+						case "Inheritance":
+			document.getElementById("bookimg").src = "Inheritance_cover.jpg"
+			var series = "InheritanceCycle";
+			document.getElementById("Series").innerHTML = "Inheritance Cycle"		
+			document.getElementById("Pages").innerHTML = "860pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Eragon</li> <li>Saphira</li> <li>Murthag</li> <li>Brom</li> <li>Angela</li><li>Solembum</li> <li>Nasuada</li> <li>Glaedr </li> <li>Araya</li> <li>Ormis</li> "	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Inheritance"
+			
+			document.getElementById("Quote").innerHTML = "\“HERE LIES BROM\nWho was\nA Rider bonded to the dragon Saphira\nSon of Holcomb and Nelda\nBeloved of Selena\nFather of Eragon Shadeslayer\nFounder of the Varden\nAnd Bane of the Forsworn.\nMay his name live on in glory.\nStydja unin mo'ranr\”"	
+			break;
+			
+			
+			
+			
+					case "Raven Boys":
+			document.getElementById("bookimg").src = "Raven%20Boy.jpg"
+			var series = "RavenCycle";
+			document.getElementById("Series").innerHTML = "Raven Cycle"		
+			document.getElementById("Pages").innerHTML = "409pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Richard Gansey</li> <li>Noha Czerny</li> <li>Adam Parish</li> <li>Ronan Lynch</li> <li>Blue Sargent</li>    " 	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "The Raven Boys"
+			
+			document.getElementById("Quote").innerHTML = "\“Gansey's partying with his mother,And Noah's fucking dead. But Parrish is here.\” -Ronan"	
+			break;
+			
+			
+			
+			
+			case "Dream Thieves":
+			document.getElementById("bookimg").src = "8472014340_f18884df4d_o.jpg"
+			var series = "RavenCycle";
+			document.getElementById("Series").innerHTML = "Raven Cycle"		
+			document.getElementById("Pages").innerHTML = "439pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Richard Gansey</li> <li>Noha Czerny</li> <li>Adam Parish</li> <li>Ronan Lynch</li> <li>Blue Sargent</li>    " 	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Dream Thieves"
+			
+			document.getElementById("Quote").innerHTML = "\“What do you want, Adam? To feel awake when my eyes are open.\”"
+			break;
+			
+			
+			
+			
+						
+				case "Blue Lily":
+			document.getElementById("bookimg").src = "Blue%20Lily,Lily%20Blue%20cover.jfif"
+			var series = "RavenCycle";
+			document.getElementById("Series").innerHTML = "Raven Cycle"		
+			document.getElementById("Pages").innerHTML = "391pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Richard Gansey</li> <li>Noha Czerny</li> <li>Adam Parish</li> <li>Ronan Lynch</li> <li>Blue Sargent</li>    " 	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Blue Lily,Lily Blue"
+			
+			document.getElementById("Quote").innerHTML = "\“Adam was beginning to realize that he hadn\'t known Ronan at all. Or rather, he had known part of him and assumed it was all of him.\”"
+			break;
+			
+				case "Raven King":
+			document.getElementById("bookimg").src = "Raven%20King%20Cover.jfif"
+			var series = "RavenCycle";
+			document.getElementById("Series").innerHTML = "Raven Cycle"		
+			document.getElementById("Pages").innerHTML = "423pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Richard Gansey</li> <li>Noha Czerny</li> <li>Adam Parish</li> <li>Ronan Lynch</li> <li>Blue Sargent</li>    " 	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "The Raven King"
+			
+			document.getElementById("Quote").innerHTML = "\“Noah crouched over Gansey\'s body. He said, for the last time, \'You will live because of Glendower. Someone else on the ley line is dying when they should not, and so you will live when you should not.\”"
+			break;
+			
+			
+			
+						case "Renegades":
+			document.getElementById("bookimg").src = "Renegades_cover.jfif"
+			var series = "Renegades";
+			document.getElementById("Series").innerHTML = "Renegades"		
+			document.getElementById("Pages").innerHTML = "556pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Nova Artino</li> <li>Adrian</li> <li>Ruby</li> <li>Oscar</li>     " 	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Renegades"
+			
+			document.getElementById("Quote").innerHTML = "\“To be weak.\'\'Excuse me?\'\'That is his deepest fear. To be, in essence, without power.\”"
+			break;
+			
+			
+				case "Archenemies":
+			document.getElementById("bookimg").src = "Archenemies.jpg"
+			var series = "Renegades";
+			document.getElementById("Series").innerHTML = "Renegades"		
+			document.getElementById("Pages").innerHTML = "560pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Nova Artino</li> <li>Adrian</li> <li>Ruby</li> <li>Oscar</li><li>Max</li>     " 	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Archenemies"
+			
+			document.getElementById("Quote").innerHTML = "\“Once we have total power, what's to keep us from becoming villains ourselves?\”"
+			break;
+			
+			
+				case "Supernova":
+			document.getElementById("bookimg").src = "Supernova_Cover.jpg"
+			var series = "Renegades";
+			document.getElementById("Series").innerHTML = "Renegades"		
+			document.getElementById("Pages").innerHTML = "552pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Nova Artino</li> <li>Adrian</li> <li>Ruby</li> <li>Oscar</li><li>Max</li>     " 	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Supernova"
+			
+			document.getElementById("Quote").innerHTML = "\“One cannot be awed who has no soul. Just as one cannot be brave who has no fear.\”"
+			break;
+			
+			
+			case "Sabriel":
+			document.getElementById("bookimg").src = "Sabriel.png"
+			var series = "Old Kingdom";
+			document.getElementById("Series").innerHTML = "Old Kingdom"		
+			document.getElementById("Pages").innerHTML = "491pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Sabriel</li>Mogget<li>Touchstone</li> <li>Kerrigor</li> <li>Terciel(Abhorsen) " 	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Sabriel"
+			
+			document.getElementById("Quote").innerHTML = "\“Does the walker choose the path, or the path the walker?\”"
+			break;
+			
+			
+			
+			case "Lirael":
+			document.getElementById("bookimg").src = "Lirael.png"
+			var series = "Old Kingdom";
+			document.getElementById("Series").innerHTML = "Old Kingdom"		
+			document.getElementById("Pages").innerHTML = "720pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Sabriel</li>Mogget<li>Touchstone</li> <li>Sameth</li><li>Nichola Sayer</li> <li>Lirael</li> " 	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Lirael"
+			
+			document.getElementById("Quote").innerHTML = "\“The most important questions—\“What are you? Where did you come from?\”—had a whole range of answers, starting with \“I’m the Disreputable Dog” and \“from elsewhere\” and occasionally becoming as eloquent as \“I’m your Dog\” and \“You tell me—it was your spell.\”"
+			break;
+			
+			
+			
+			
+				case "Abhorsen":
+			document.getElementById("bookimg").src = "Abhorsen.png"
+			var series = "Old Kingdom";
+			document.getElementById("Series").innerHTML = "Old Kingdom"		
+			document.getElementById("Pages").innerHTML = "528pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Sabriel</li>Mogget<li>Touchstone</li> <li>Sameth</li><li>Nichola Sayer</li> <li>Lirael</li> " 	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Abhorsen"
+			
+			document.getElementById("Quote").innerHTML = "\“For everyone and everything, there is a time to die. Some do not know it, or would delay it, but its truth cannot be denied. Not when you look into the stars of the ninth gate.\”"
+			break;
+			
+					case "Goldenhand":
+			document.getElementById("bookimg").src = "Goldenhand.png"
+			var series = "Old Kingdom";
+			document.getElementById("Series").innerHTML = "Old Kingdom"		
+			document.getElementById("Pages").innerHTML = "528pg"		
+			
+			document.getElementById("characterList").innerHTML = "<li>Sabriel</li>Mogget<li>Touchstone</li> <li>Sameth</li><li>Nichola Sayer</li> <li>Lirael</li> " 	
+			
+			document.getElementById("Type").innerHTML = "YA Fantasy"	
+			document.getElementById("Title").innerHTML = "Goldenhand"
+			
+			document.getElementById("Quote").innerHTML = "\“She fought back the tears in her eyes, because though she no longer felt she was one of the Clayr, she still felt she was a librarian and always would be, no matter what else she had become as well.\”"
+			break;
+			
+			
+			
+			
+			
+			
+			
+			
+			
+						
+	}
+	////     \
+	</script>
+		
+		
+			
+		
+
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>

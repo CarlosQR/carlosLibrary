@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+	
+	
+	<head>
+		
+		
+		
+		
+		<style>
+			body{
+				
+				
+				background-color: darkred
+			}
+			#book{
+				
+				
+				width: 300px;
+				height: 420px;
+				
+			}
+		</style>
+	</head>
+	
+	
+	<body>
+	
+	<h1 id="seriesTitle" style="text-align: center"></h1>
+		
+		
+		
+		<p style="text-align: center">
+			
+			
+		<img id="book" src="" style="">
+			
+		
+			
+			
+	</p>
+			<img id="book1" src="img_527984-removebg-preview.png" style=" color: g width: 150px;height: 170px;transform: rotate(270deg);position: absolute;left: 30px;top: 400px" onclick="LeftArrow()">
+		
+		<img id="book1" src="img_527984-removebg-preview.png" style=" width: 200px;height: 170px;transform: rotate(90deg);position: absolute;right: 30px;top: 400px" onclick="RightArrow()">
+		
+		
+		
+		
+	</body>
+	
+	
+	<script>
+		
+		
+	var	series = localStorage.getItem("series")
+	
+		var books = [
+			
+			
+			
+		]
+		
+
+		
+		switch(series){
+			
+			
+			
+			case "ShadowhunterChronicles":
+			
+			books[0] = "clockwork-angel.jpg";
+			books[1] = "CP_cover,_repackaged.jpg";
+			books[2] ="CP2_cover,_repackaged.jpg";
+			books[3] ="Chain of Gold.jpg";
+			books[4] = "City of Bones.jpg";
+			books[5] = "city-of-ashes-9781481455978_hr.jpg";
+			books[6] = "9781406307641.jpg";
+			books[7] ="COFA_cover,_repackaged.jpg";
+			books[8] = "COLS.jfif";
+			books[9] ="COHF_cover,_repackaged.jpg";
+			books[10] = "tales from the shadowhunter academy.jpg"
+			books[11] = "220px-Lady_Midnight_book_cover.jpg"
+			books[12] = "lord-of-shadows-9781471116650_hr.jpg"
+			books[13] = "Queen of midnigth.jfif"
+			books[14] = ""
+			books[15] = ""
+			books[16] = ""
+			books[17] = ""
+			books[18] = ""
+			books[19] = ""
+			books[20] = ""
+			books[21] = ""
+			books[22] = ""
+			books[23] = ""
+			books[24] = ""
+			books[25] = ""
+			document.getElementById("seriesTitle").innerHTML="Shadowhunter Chronicles";
+							
+			
+			
+			break;
+				
+				
+				
+				
+		 case"InheritanceCycle":
+	        books[0] = "Eragon_cover.jfif";
+			books[1] = "Eldest_cover.jpg";
+			books[2] ="brisingr_cover.jpg";
+			books[3] ="Inheritance_cover.jpg";
+			books[4] = ""
+		
+		document.getElementById("seriesTitle").innerHTML="Inheritance Cycle";
+				
+				break;
+				
+					 case"RavenCycle":
+			books[0] ="Raven%20Boy.jpg";
+			books[1] = "8472014340_f18884df4d_o.jpg";
+			books[2] ="Blue%20Lily,Lily%20Blue%20cover.jfif";
+			books[3] ="Raven%20King%20Cover.jfif";
+			books[4] = "";
+			books[5] = "";
+			books[6] = "";
+			books[7] = "";
+			books[8] = "";
+				
+		
+		document.getElementById("seriesTitle").innerHTML="Raven Cycle";
+				
+				break;
+				
+					 case"Renegades":
+			books[0] ="Renegades_cover.jfif";
+			books[1] = "Archenemies.jpg";
+			books[2] ="Supernova_Cover.jpg";
+			books[3] ="";
+			books[4] = "";
+			books[5] = "";
+			books[6] = "";
+			books[7] = "";
+			books[8] = "";
+				
+		
+		document.getElementById("seriesTitle").innerHTML="Renegades Series";
+				
+				break;
+				
+							 case"Old Kingdom":
+			books[0] ="Sabriel.png";
+			books[1] = "Lirael.png";
+			books[2] ="Abhorsen.png";
+			books[3] ="Goldenhand.png";
+			books[4] = "";
+			books[5] = "";
+			books[6] = "";
+			books[7] = "";
+			books[8] = "";
+				
+		
+		document.getElementById("seriesTitle").innerHTML="Old Kingdom";
+		
+				
+				break;
+		}
+		
+		var counter= 0;
+		
+	function RightArrow(){
+		counter = counter + 1
+		
+		var bookimg = document.getElementById("book").src = books[counter];
+		
+	
+		
+			if(document.getElementById("book").src ==window.location.href){
+			
+		counter = counter-1;
+				document.getElementById("book").src = books[counter];
+		
+		
+		
+		
+	}
+		
+		
+		
+	}
+		
+		
+			var bookimg = document.getElementById("book").src = books[counter];
+		
+
+		
+		
+	
+		
+		
+		
+	
+	function LeftArrow(){
+		counter = counter- 1
+		
+		var bookimg = document.getElementById("book").src = books[counter];
+		
+	if(counter<0){
+			
+			counter = 0
+			
+			document.getElementById("book").src = books[counter];
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	</script>
+	
+	
+	
+	
+	
+</html>
